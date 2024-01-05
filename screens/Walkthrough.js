@@ -51,7 +51,7 @@ export default function Walkthrough({ navigation }) {
                             Terms and Privacy
                         </Text>
 
-                        <Button
+                         <Button
                             title="Start Messaging"
                             onPress={() => navigation.navigate('PhoneNumber')}
                             style={{
@@ -59,7 +59,7 @@ export default function Walkthrough({ navigation }) {
                                 paddingVertical: 12,
                                 marginBottom: 48,
                             }}
-                        />
+                        /> 
                     </View>
                 </View>
             </PageContainer>
