@@ -8,7 +8,7 @@ const Input = (props) => {
             <View style={styles.inputContainer}>
                 <TextInput
                     style={styles.input}
-                    {...props} //
+                    {...props} 
                     placeholder={props.placeholder}
                     placeholderTextColor={COLORS.gray}
                 />

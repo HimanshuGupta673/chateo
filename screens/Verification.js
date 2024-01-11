@@ -8,15 +8,6 @@ import Button from '../components/Button'
 import PageTitle from '../components/PageTitle'
 
 const Verification = ({ navigation }) => {
-    // const otpInput = useRef(null)
-
-    // const clearText = () => {
-    //     otpInput.current.clear()
-    // }
-
-    // const setText = () => {
-    //     otpInput.current.setValue('1234')
-    // }
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <PageContainer>
@@ -55,6 +46,16 @@ const Verification = ({ navigation }) => {
                     </View>
                     <Button
                         title="Resend code"
+                        disabled
+                        onPress={() => navigation.navigate('ProfileAccount')}
+                        style={{
+                            width: '100%',
+                            paddingVertical: 12,
+                            marginBottom: 28,
+                        }}
+                    />
+                    <Button
+                        title="Submit"
                         disabled
                         onPress={() => navigation.navigate('ProfileAccount')}
                         style={{
