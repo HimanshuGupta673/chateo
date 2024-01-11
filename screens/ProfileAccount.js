@@ -61,9 +61,9 @@ const ProfileAccount = ({ navigation }) => {
                                 paddingVertical: 12,
                                 marginBottom: 48,
                             }}
-                            // onPress={() =>
-                            //     navigation.navigate('BottomTabNavigation')
-                            // }
+                            onPress={() =>
+                                navigation.navigate('BottomTabNavigation')
+                            }
                         />
                     </View>
                 </View>

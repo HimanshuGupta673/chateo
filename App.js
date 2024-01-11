@@ -4,9 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Walkthrough, Verification, ProfileAccount, PhoneNumber } from './screens';
+import { Walkthrough, Verification, ProfileAccount, PhoneNumber, PersonalChat } from './screens';
 import { useCallback } from 'react'
-
+import BottomTabNavigation from './navigation/BottomTabNavigation';
 SplashScreen.preventAutoHideAsync()
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -38,10 +38,12 @@ export default function App() {
           }}
           initialRouteName='Walkthrough'
         >
+          <Stack.Screen name='BottomTabNavigation' component={BottomTabNavigation} />
           <Stack.Screen name='Walkthrough' component={Walkthrough} />
           <Stack.Screen name='Verification' component={Verification} />
           <Stack.Screen name='ProfileAccount' component={ProfileAccount} />
           <Stack.Screen name='PhoneNumber' component={PhoneNumber} />
+          <Stack.Screen name='PersonalChat' component={PersonalChat}/>
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
